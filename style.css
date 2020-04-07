@@ -2,29 +2,32 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.nav h2 {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.home {
   font-size: 30px;
   margin-left: 5em;
   margin-right: 21em;
 }
 
-.nav h3 {
+.photography {
   font-size: 20px;
   margin-right: 20em;
 }
 
-.nav h4 {
+.join {
   font-size: 20px;
 }
 
-.nav h2,
-h3,
-h4 {
-  display: inline;
-}
-
-.nav {
+.home,
+.photography,
+.join {
   margin-top: 20px;
+  font-weight: bold;
+  display: inline-block;
 }
 
 h1 {
@@ -74,29 +77,57 @@ h1 {
 }
 
 @media screen and (max-width: 1700px) {
-  .nav h2 {
+  .home {
     margin-left: 14%;
     margin-right: 25%;
   }
 
-  .nav h3 {
+  .photography {
     margin-right: 20%;
   }
 }
 
 @media screen and (max-width: 700px) {
+  .hero img,
+  .hero video {
+    top: 0%;
+  }
+
   h1 {
     font-size: 6em;
-    transform: translateX(-50%) translateY(-20%);
+    transform: translateX(-50%) translateY(-40%);
   }
 
-  .nav h2 {
-    text-align: center;
-    margin-left: 40%;
+  .home {
+    margin-left: 42%;
   }
 
-  .nav h3 {
-    margin-left: 2%;
-    margin-right: 50%;
+  .photography {
+    margin-left: 39%;
+    margin-right: 17%;
+  }
+
+  .join {
+    margin-left: 46%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 4.5em;
+    transform: translateX(-50%) translateY(-25%);
+  }
+
+  .home {
+    margin-left: 37%;
+  }
+
+  .photography {
+    margin-left: 32%;
+    margin-right: 17%;
+  }
+
+  .join {
+    margin-left: 43%;
   }
 }
