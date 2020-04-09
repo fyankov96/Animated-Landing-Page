@@ -131,3 +131,14 @@ h1 {
     margin-left: 43%;
   }
 }
+
+@media screen and (max-height: 965px) and (min-width: 1700px) {
+  .hero img,
+  .hero video {
+    height: 120%;
+  }
+
+  h1 {
+    top: 58%;
+  }
+}
